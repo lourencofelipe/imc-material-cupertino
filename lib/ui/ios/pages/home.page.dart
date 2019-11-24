@@ -35,6 +35,13 @@ class _HomePageState extends State<HomePage> {
               keyboardType: TextInputType.number,
             ),
           ),
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: CupertinoButton.filled(
+              child: Text("Calcular"),
+              onPressed: () {},
+            ),
+          ),
         ],
       ),
     );
