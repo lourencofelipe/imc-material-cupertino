@@ -12,6 +12,31 @@ class _HomePageState extends State<HomePage> {
       navigationBar: CupertinoNavigationBar(
         middle: Text("Cálculo de IMC"),
       ),
+      child: ListView(
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: CupertinoTextField(
+              placeholder: "Altura (cm)",
+              keyboardType: TextInputType.number,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: CupertinoTextField(
+              placeholder: "Peso (kg)",
+              keyboardType: TextInputType.number,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: CupertinoTextField(
+              placeholder: "Você está fora de forma.",
+              keyboardType: TextInputType.number,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
